@@ -1,0 +1,16 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Passionweb\SymfonyCommand\:
+    resource: '../Classes/*'
+
+  Passionweb\SymfonyCommand\Command\CreateFileCommand:
+    tags:
+      - name: 'console.command'
+        command: 'create:textfile'
+        description: 'Creates a sample text file'
+        schedulable: false
+        hidden: false

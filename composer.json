@@ -1,0 +1,30 @@
+{
+  "name": "passionweb/symfony-command",
+  "license": "GPL-3.0",
+  "description": "Adds a Symfony Command with option and question (if option not entered).",
+  "type": "typo3-cms-extension",
+  "homepage": "https://www.passionweb.de",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Manuel Schnabel",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": "^11.5 | ^12.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Passionweb\\SymfonyCommand\\": "Classes/"
+    }
+  },
+  "replace": {
+      "typo3-ter/symfony-command": "self.version"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "symfony_command"
+    }
+  }
+}
